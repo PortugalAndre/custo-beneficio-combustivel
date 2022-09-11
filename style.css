@@ -1,0 +1,24 @@
+#barraMenu {
+  background-color: aqua;
+}
+#titulo {
+  text-align: center;
+  background-color: burlywood;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 60px;
+  padding: 5px;
+}
+h1 {
+  margin: 5px;
+  padding: 5px;
+}
+
+#inputs {
+  text-align: center;
+
+  margin: auto;
+}
+#button {
+  text-align: center;
+  margin: auto;
+}
