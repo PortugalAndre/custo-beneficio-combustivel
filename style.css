@@ -22,3 +22,18 @@ h1 {
   text-align: center;
   margin: auto;
 }
+
+@font-face {
+  font-family: 'cocogoose';
+  src: url('../assets/fonts/cocogoose/cocogoose\ pro\ ultralight-trial.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+footer {
+  font-family: JetBrains Mono;
+  font-size: x-small;
+  margin-top: 50px;
+  padding: auto;
+  text-align: end;
+}
