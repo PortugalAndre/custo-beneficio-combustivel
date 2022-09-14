@@ -1,9 +1,16 @@
 #barraMenu {
   background-color: aqua;
 }
+
+#bomba_combustivel {
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+
 #titulo {
   text-align: center;
-  background-color: burlywood;
+
   font-family: Arial, Helvetica, sans-serif;
   height: 60px;
   padding: 5px;
@@ -15,12 +22,30 @@ h1 {
 
 #inputs {
   text-align: center;
-
   margin: auto;
 }
-#button {
+#input1 {
+  background-color: aqua;
+}
+#input2 {
+  background-color: cornflowerblue;
+}
+#etanol {
+  height: 30px;
+  text-align: left;
+}
+#gasolina {
+  height: 30px;
+  text-align: left;
+}
+
+#button_container {
+  margin-top: 20px;
+  height: 30px;
   text-align: center;
-  margin: auto;
+}
+button {
+  width: 200px;
 }
 
 @font-face {

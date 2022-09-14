@@ -1,4 +1,2 @@
-function start() {
-  alert('JS Conectado');
-}
+function start() {}
 start();
