@@ -35,16 +35,14 @@
   </head>
   <body>
     <header>
-      <div>
-        <div class="container">
-          <div class="row">
-            <div class="col-12" id="barraMenu">barra menu</div>
-          </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12" id="barraMenu">barra menu</div>
         </div>
       </div>
     </header>
     <div>
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-12" id="bomba_combustivel">
             <img src="./assets/img/bomba_combustivel_bc.png" alt="" />
@@ -52,7 +50,7 @@
         </div>
       </div>
     </div>
-    <div class="container" id="titulo">
+    <div class="container-fluid" id="titulo">
       <div class="row">
         <div class="col-12">
           <h1>Álcool ou Gasolina?</h1>
@@ -60,31 +58,32 @@
       </div>
     </div>
     <!--INPUTS-->
-    <div class="container" id="inputs">
-      <div class="row" id="input1">
+    <div class="container-fluid" id="inputs">
+      <div class="row" id="divInput1">
         <div class="col-3"></div>
-        <div class="col-6" id="etanol">
+        <div class="col-6" id="inputGasolina">
           <label>Gasolina(preço por litro)</label>
-          <input type="text" value="R$ 5,00" />
+          <input id="input1" type="number" value="" /><br />
         </div>
         <div class="col-3"></div>
       </div>
 
-      <div class="row" id="input2">
+      <div class="row" id="divInput2">
         <div class="col-3"></div>
-        <div class="col-6" id="gasolina">
+        <div class="col-6" id="inputEtanol">
           <label>Etanol(preço por litro)</label>
-          <input type="text" value="R$ 3,50" />
+          <input id="input2" type="number" value="" />
         </div>
         <div class="col-3"></div>
       </div>
     </div>
+    <p id="resultadoCalculado"></p>
     <!--BOTÃO-->
-    <div class="container" id="button_container">
+    <div class="container-fluid" id="button_container">
       <div class="row">
         <div class="col-3"></div>
         <div class="col-6">
-          <button class="btn">Calcular</button>
+          <button class="btn" id="botaoCalcular">Calcular</button>
         </div>
         <div class="col-3"></div>
       </div>
