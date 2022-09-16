@@ -1,20 +1,18 @@
 //Função responsável por iniciar o funcionamento de todo o sistema ao receber inputs do HTML
 function start() {
   var botaoCalcular = document.querySelector('#botaoCalcular');
-  /*MODIFICAR BOTÃO ATRAVÉS DO JS
-  buttonCalculateImc.textContent = 'modifiquei';
-  */
+
   botaoCalcular.addEventListener('click', inputRecebido);
 
-  var inputGasolina = document.querySelector('#inputGasolina');
-  var inputEtanol = document.querySelector('#inputEtanol');
+  //var inputGasolina = document.querySelector('#inputGasolina');
+  //var inputEtanol = document.querySelector('#inputEtanol');
 
-  inputGasolina.addEventListener('input', inputRecebido);
-  inputEtanol.addEventListener('input', inputRecebido);
+  //inputGasolina.addEventListener('input', inputRecebido);
+  //inputEtanol.addEventListener('input', inputRecebido);
 }
 
 function calular(gasolina, etanol) {
-  return gasolina / etanol;
+  return etanol / gasolina;
 }
 
 function inputRecebido() {
@@ -26,6 +24,12 @@ function inputRecebido() {
 
   resultado = calular(gasolina, etanol);
 
-  resultadoCalculado.textContent = resultado;
+  if (resultado > 0.7) {
+    var alcoolOuGasolina = 'Prefira abastecer seu veículo com Gasolina';
+  } else {
+    var alcoolOuGasolina = 'Prefira abastecer seu veículo com Etanol';
+  }
+
+  resultadoCalculado.textContent = alcoolOuGasolina;
 }
 start();

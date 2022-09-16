@@ -1,62 +1,102 @@
-#barraMenu {
-  background-color: aqua;
+#containerAzul1 {
+  background-color: cornflowerblue;
+  margin-top: 50px;
+  padding: 20px;
+}
+#containerAzul2 {
+  background-color: cornflowerblue;
+  margin: auto;
+  border: solid 10px white;
+  padding: 20px;
 }
 
-#bomba_combustivel {
+#divBombaCombustivel {
   text-align: center;
-  margin: 5px;
+  margin-top: 5px;
   padding: 5px;
   height: max-content;
 }
 
-#titulo {
+#imgBombaCombustivel {
+  border: solid 2px black;
+  border-radius: 50px;
+}
+
+#containerTitulo {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   height: 60px;
-  padding: 5px;
+  margin-top: 5px;
 }
 h1 {
-  margin: 5px, 5px, 5px, 5px;
+  margin-top: 5px;
 }
 
-#inputs {
+p {
+  margin-bottom: 2px;
+}
+#containerInputs {
+  margin-top: 5px;
+}
+#containerInput1 {
+  margin-top: 5px;
   text-align: center;
-  margin: auto;
 }
-#divInput1 {
-  background-color: aqua;
-}
-#input1 {
-  border-radius: 5px;
-  text-align: center;
-  width: 150px;
-}
-#divInput2 {
-  background-color: cornflowerblue;
-}
-#input2 {
-  border-radius: 5px;
-  text-align: center;
-  width: 150px;
-}
-#etanol {
-  height: 30px;
-  text-align: center;
-  margin: 5px;
-}
-#gasolina {
-  height: 30px;
-  text-align: center;
-  margin: 5px;
+#rowInput1 {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
-#button_container {
+#inputGasolina {
+  margin-top: 0%;
+  border-radius: 5px;
+}
+#containerInput2 {
+  margin-top: 5px;
+  text-align: center;
+}
+#row1Input2 {
   margin-top: 20px;
-  height: 30px;
+}
+
+#inputEtanol {
+  margin-top: 0%;
+  border-radius: 5px;
+}
+
+#containerBotao {
+  margin-top: 20px;
   text-align: center;
 }
-button {
-  width: 200px;
+#botaoCalcular {
+  margin-bottom: 10px;
+  background-color: #f1efe3;
+  color: black;
+}
+
+#rowElementoCollapsavel {
+  padding: 5px;
+  text-align: center;
+  height: 50px;
+  background-color: #f1efe3;
+  border: solid 2px black;
+}
+
+#resultadoCalculado {
+  font-size: x-large;
+  padding: 5px;
+  text-align: center;
+}
+#calculoExplicado {
+  margin-top: 10px;
+  background-color: #f1efe3;
+  height: 160px;
+  padding: 5px;
+  text-align: justify;
+  border: solid 2px black;
+}
+#exemplo {
+  margin-top: 10px;
 }
 
 @font-face {

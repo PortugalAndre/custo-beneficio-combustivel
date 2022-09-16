@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -34,62 +34,116 @@
     />
   </head>
   <body>
-    <header>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12" id="barraMenu">barra menu</div>
+    <header></header>
+    <div class="container-lg" id="containerAzul1">
+      <div class="container-lg" id="containerAzul2">
+        <div class="container">
+          <div class="row">
+            <div class="col" id="divBombaCombustivel">
+              <img
+                id="imgBombaCombustivel"
+                src="./assets/img/bomba_combustivel_bc.png"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
-      </div>
-    </header>
-    <div>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12" id="bomba_combustivel">
-            <img src="./assets/img/bomba_combustivel_bc.png" alt="" />
+
+        <div class="container" id="containerTitulo">
+          <div class="row">
+            <div class="col">
+              <h2>Álcool ou Gasolina?</h2>
+            </div>
+          </div>
+        </div>
+        <!--INPUTS-->
+        <div class="container" id="containerInputs">
+          <div class="container-fluid" id="containerInput1">
+            <div class="row" id="rowInput1">
+              <div class="col" id="colInputGasolina">
+                <p>Gasolina(preço por litro)</p>
+                <span>R$</span
+                ><input id="inputGasolina" type="number" value="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid" id="containerInput2">
+            <div class="row" id="rowInput2">
+              <div class="col" id="colInputEtanol">
+                <p>Etanol(preço por litro)</p>
+                <span>R$</span><input id="inputEtanol" type="number" value="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--BOTÃO-->
+        <div class="container" id="containerBotao">
+          <div class="row">
+            <div class="col">
+              <p>
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#botaoCollapsavel"
+                  aria-expanded="false"
+                  aria-controls="botaoCollapsavel"
+                  id="botaoCalcular"
+                >
+                  Calcular
+                </button>
+              </p>
+              <!--ELEMENTO COLLAPSAVEL-->
+              <div class="collapse container" id="botaoCollapsavel">
+                <div class="card card-body row" id="rowElementoCollapsavel">
+                  <div class="col">
+                    <p><strong id="resultadoCalculado"></strong></p>
+                  </div>
+                </div>
+              </div>
+              <div class="collapse container" id="botaoCollapsavel" >
+                <div class="card card-body row"id="calculoExplicado">
+                  <div class="col" >
+                    <p>
+                      <h5>Entenda como o cálculo é feito</h5> Divida o valor do litro do etanol pelo da gasolina.<br>
+
+                      Caso o resultado seja menor que 0,7, a recomendação é abastecer com álcool. Se maior, a recomendação 
+                      é escolher a gasolina.
+                    </p>
+                    
+                    <p id="exemplo">                      
+                      <em>Exemplo: se o álcool custa R$ 3,29 e a gasolina R$ 4,92, o resultado da divisão do primeiro pelo segundo é 0,67, menor que 0,7. Portanto, é mais vantajoso abastecer com álcool.
+                      </em>
+                    </p>
+                  </div>
+                </div>
+             </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="container-fluid" id="titulo">
-      <div class="row">
-        <div class="col-12">
-          <h1>Álcool ou Gasolina?</h1>
-        </div>
-      </div>
-    </div>
-    <!--INPUTS-->
-    <div class="container-fluid" id="inputs">
-      <div class="row" id="divInput1">
-        <div class="col-3"></div>
-        <div class="col-6" id="inputGasolina">
-          <label>Gasolina(preço por litro)</label>
-          <input id="input1" type="number" value="" /><br />
-        </div>
-        <div class="col-3"></div>
-      </div>
 
-      <div class="row" id="divInput2">
-        <div class="col-3"></div>
-        <div class="col-6" id="inputEtanol">
-          <label>Etanol(preço por litro)</label>
-          <input id="input2" type="number" value="" />
-        </div>
-        <div class="col-3"></div>
-      </div>
-    </div>
-    <p id="resultadoCalculado"></p>
-    <!--BOTÃO-->
-    <div class="container-fluid" id="button_container">
-      <div class="row">
-        <div class="col-3"></div>
-        <div class="col-6">
-          <button class="btn" id="botaoCalcular">Calcular</button>
-        </div>
-        <div class="col-3"></div>
-      </div>
-    </div>
-    <!-- JavaScript -->
+    <!-- JavaScript (Opcional) -->
     <script src="script.js"></script>
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
   </body>
   <footer><a href="https://github.com/PortugalAndre">PortugaDev</a></footer>
 </html>
