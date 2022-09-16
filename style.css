@@ -50,7 +50,9 @@ p {
 #inputGasolina {
   margin-top: 0%;
   border-radius: 5px;
+  width: 152px;
 }
+
 #containerInput2 {
   margin-top: 5px;
   text-align: center;
@@ -62,6 +64,7 @@ p {
 #inputEtanol {
   margin-top: 0%;
   border-radius: 5px;
+  width: 152px;
 }
 
 #containerBotao {
