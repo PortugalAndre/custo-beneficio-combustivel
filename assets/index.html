@@ -16,7 +16,7 @@
       crossorigin="anonymous"
     />
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/CSS/style.css" />
     <!-- Fontes -->
     <link
       href="https://fonts.googleapis.com/css?family=JetBrains Mono"
@@ -42,7 +42,7 @@
             <div class="col" id="divBombaCombustivel">
               <img
                 id="imgBombaCombustivel"
-                src="./assets/img/bomba_combustivel.png"
+                src="./assets/img/bomba_combustivel_BC.png"
                 alt=""
               />
             </div>
@@ -95,32 +95,46 @@
                   Calcular
                 </button>
               </p>
-              <!--ELEMENTO COLLAPSAVEL-->
-              <div class="collapse container" id="botaoCollapsavel">
-                <div class="card card-body row" id="rowElementoCollapsavel">
-                  <div class="col">
-                    <p><strong id="resultadoCalculado"></strong></p>
-                  </div>
-                </div>
-              </div>
-              <div class="collapse container" id="botaoCollapsavel" >
-                <div class="card card-body row"id="calculoExplicado">
-                  <div class="col" >
-                    <p>
-                      <h5>Entenda como o cálculo é feito</h5> Divida o valor do litro do etanol pelo da gasolina.<br>
-
-                      Caso o resultado seja menor que 0,7, a recomendação é abastecer com etanol. Se maior, a recomendação 
-                      é escolher a gasolina.
-                    </p>
+ <!--ELEMENTOS COLLAPSAVEIS-->
+            
+            <div class="container">
+                <div class="row" >
+                  <div class="col"  >
+                  <!--ELEMENTO COLLAPSAVEL 1-->
+                    <div class="collapse" id="botaoCollapsavel"  >
+                      <div class="card card-body" id="elementoCollapsavel1">
+                        <p><strong id="resultadoCalculado"></strong></p>
+                      </div>
+                    </div>
                     
-                    <p id="exemplo">                      
-                      <em>Exemplo: se o etanol custa R$ 3,50 e a gasolina R$ 5,60, o resultado da divisão do primeiro 
-                        pelo segundo é 0,63, menor que 0,7. Portanto, é mais vantajoso abastecer com álcool.
-                      </em>
-                    </p>
+                  </div>
+                </div>  
+             
+                <div class="row" >
+                  <div class="col" >
+                    <!--ELEMENTO COLLAPSAVEL 2-->    
+                    <div class="collapse" id="botaoCollapsavel" >
+                      <div class="card card-body" id="calculoExplicado" 
+                      
+                      >
+                        <p>
+                          <h5>Entenda como o cálculo é feito</h5> Divida o valor do litro do etanol pelo da gasolina.<br>
+                              Caso o resultado seja menor que 0,7, a recomendação é abastecer com etanol. Se maior, a recomendação 
+                              é escolher a gasolina.
+                          <a>                      
+                          <em>Exemplo: se o etanol custa R$ 3,50 e a gasolina R$ 5,60, o resultado da divisão do primeiro 
+                              pelo segundo é 0,63, menor que 0,7. Portanto, é mais vantajoso abastecer com álcool.
+                          </em>
+                          </a>
+                        </p>
+                       </div>
+                    </div>
+
                   </div>
                 </div>
-             </div>
+
+            </div>    
+
             </div>
           </div>
         </div>
@@ -128,7 +142,7 @@
     </div>
 
     <!-- JavaScript (Opcional) -->
-    <script src="script.js"></script>
+    <script src="./assets/JS/script.js"></script>
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
