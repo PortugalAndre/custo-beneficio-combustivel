@@ -25,9 +25,10 @@ function inputRecebido() {
   resultado = calular(gasolina, etanol);
 
   if (resultado > 0.7) {
-    var alcoolOuGasolina = 'Prefira abastecer seu veículo com Gasolina';
+    var alcoolOuGasolina =
+      'É mais vantajoso abastecer seu veículo com Gasolina';
   } else {
-    var alcoolOuGasolina = 'Prefira abastecer seu veículo com Etanol';
+    var alcoolOuGasolina = 'É mais vantajoso abastecer seu veículo com Etanol';
   }
 
   resultadoCalculado.textContent = alcoolOuGasolina;
