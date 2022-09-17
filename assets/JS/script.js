@@ -24,13 +24,18 @@ function inputRecebido() {
 
   resultado = calular(gasolina, etanol);
 
-  if (resultado > 0.7) {
+  if ((gasolina <= 0) & (etanol <= 0)) {
     var alcoolOuGasolina =
-      'É mais vantajoso abastecer seu veículo com Gasolina';
+      'Verifique se os preços foram digitados corretamente';
   } else {
-    var alcoolOuGasolina = 'É mais vantajoso abastecer seu veículo com Etanol';
+    if (resultado > 0.7) {
+      var alcoolOuGasolina =
+        'É mais vantajoso abastecer seu veículo com Gasolina';
+    } else {
+      var alcoolOuGasolina =
+        'É mais vantajoso abastecer seu veículo com Etanol';
+    }
   }
-
   resultadoCalculado.textContent = alcoolOuGasolina;
 }
 start();
